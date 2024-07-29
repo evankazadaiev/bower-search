@@ -1,30 +1,58 @@
-# React + TypeScript + Vite
+# Bower Search
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Responsive web app that mimics the behavior of [Bower's search page](https://bower.io/search/). 
+This application allows users to search for and view details of various modules with sorting and pagination features.
 
-Currently, two official plugins are available:
+## Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A live demo of the application is available [here](https://your-demo-link.com).
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Responsive Design:** Adapts seamlessly to all screen sizes, including mobile, tablet, and desktop.
+- **Search Functionality:** Search for modules by name.
+- **Module Info:** View module details including name, description, stars, forks, and homepage link.
+- **Pagination:** Navigate through the search results with pagination.
+- **Sorting:** Sort modules by various criteria.
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies Used
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Material-UI](https://mui.com/)
+- [Axios](https://axios-http.com/)
+- [Libraries.io API](https://libraries.io/api)
+
+## Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/en/download/)
+- [Yarn](https://yarnpkg.com/getting-started/install)
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/bower-search.git
+cd bower-search
+   ```
+
+2. Install dependencies
+  ```bash
+  yarn install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+4. Create .env file in the project root:
+  ```bash
+  touch .env
+  VITE_APP_API_URL=http://localhost:3000
+  ```
+3. Start the development server:
+
+```bash
+yarn dev
+```
+
