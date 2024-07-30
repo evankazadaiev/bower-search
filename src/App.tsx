@@ -1,5 +1,5 @@
 import React from 'react';
-import SearchPage from './pages/SearchPage';
+import SearchPage from '@/modules-search/pages/SearchPage';
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import theme from '@/theme.ts';
 import './index.scss';
