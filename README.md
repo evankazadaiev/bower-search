@@ -37,7 +37,7 @@ Make sure you have the following installed:
 - [Node.js](https://nodejs.org/en/download/)
 - [Yarn](https://yarnpkg.com/getting-started/install)
 
-### Installation
+### Project local setup
 
 1. Clone the repository:
 ```bash
@@ -53,17 +53,19 @@ cd bower-search
 3. Create .env file in the project root:
   ```bash
   touch .env
-  VITE_APP_API_URL=http://localhost:3000
+  VITE_APP_LIBRARIES_IO_TOKEN=your-libraries-io-token-here
   ```
-4. Run tests:
 
-```bash
-yarn test
-```
-
-5. Start the development server:
+4. Start the development server:
 
 ```bash
 yarn dev
 ```
 
+5. Visit http://localhost:5173/ and start developing.
+
+### Run your tests
+
+```
+yarn run test
+```
