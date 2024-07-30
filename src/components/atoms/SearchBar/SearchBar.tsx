@@ -13,6 +13,7 @@ const SearchBar: React.FC<ISearchBarProps> = ({ value, onSearchChange }) => (
     fullWidth
     placeholder="Search..."
     variant="outlined"
+    aria-label="Search modules"
     sx={{ marginBottom: 2 }}
   />
 );

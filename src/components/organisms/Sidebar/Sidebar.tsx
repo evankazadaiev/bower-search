@@ -24,22 +24,22 @@ const Sidebar: React.FC = () => {
         <ListItemButton>
           <ListItemText sx={{}} primary="Home" />
         </ListItemButton>
-        <ListItemButton>
+        <ListItemButton disabled>
           <ListItemText primary="Creating Packages" />
         </ListItemButton>
-        <ListItemButton>
+        <ListItemButton disabled>
           <ListItemText primary="API" />
         </ListItemButton>
-        <ListItemButton>
+        <ListItemButton disabled>
           <ListItemText primary="Configuration" />
         </ListItemButton>
-        <ListItemButton>
+        <ListItemButton disabled>
           <ListItemText primary="Pluggable Resolvers" />
         </ListItemButton>
-        <ListItemButton>
+        <ListItemButton disabled>
           <ListItemText primary="Tools" />
         </ListItemButton>
-        <ListItemButton>
+        <ListItemButton disabled>
           <ListItemText primary="About" />
         </ListItemButton>
       </List>
