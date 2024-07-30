@@ -23,11 +23,13 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import LinkIcon from '@mui/icons-material/GitHub';
 import Box from '@mui/material/Box';
 import { IModule } from '@/common/types';
+import { SortOrder } from '@/common/hooks';
 
 interface IModuleListProps {
   modules: IModule[];
   isLoading: boolean;
   onSortingOrderChange: () => void;
+  order: SortOrder;
 }
 
 const ModuleList: React.FC<IModuleListProps> = ({ modules, isLoading, onSortingOrderChange, order }) => {

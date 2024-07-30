@@ -18,7 +18,9 @@ const SearchPage: React.FC = () => {
   const handleSearchChange = (e: ChangeEvent<HTMLInputElement>) => {
     handleChangeSearchText(e.target.value);
   };
-  const handlePageChange = (event: React.ChangeEvent<unknown>, value: number) => {
+
+  // @ts-ignore
+  const handlePageChange = (_, value: number) => {
     navigateToPage(value);
   };
 
